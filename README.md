@@ -1,1 +1,4 @@
 # InstallApkTest
+一个根据不同的机型安装不同OpenCVManager的Demo，使用JNI通过native方法判断手机的cpu架构，再根据cpu架构去安装对应的OpenCVManager
+
+Demo中将所有的OpenCVManager_XXX.apk存放在了Assets目录下，安装时先cup，再将该机型对应的apk复制到SDK上，最后安装。实际开发中，墙外用户可以自动到市场上去找对应的APK，墙内用户目前没有好的方法。使用此demo，为了避免将所有的OpenCVManager_XXX.apk全部复制到Assets中，导致应用的安装包过大，建议将所有的OpenCVManager_XXX.apk放在服务端，代替放在Assets目录中。
